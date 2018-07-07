@@ -2,12 +2,12 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/' do
-    @session = session 
+    @session = session
     erb :index
   end
 
   post '/checkout' do
-    
+    params.to_s
   end
 
   configure do
