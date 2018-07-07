@@ -8,8 +8,9 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    #@session = session
-   params
+    @session = session
+    session["item"] = "Item"
+   
   end
 
   configure do
