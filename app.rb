@@ -8,4 +8,9 @@ class App < Sinatra::Base
   post '/checkout' do
     params.to_s
   end
+
+  configure do
+  enable :sessions
+  set :session_secret, "secret"
+  end
 end
