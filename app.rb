@@ -11,7 +11,7 @@ class App < Sinatra::Base
   end
 
   configure do
-  enable :sessions #turns sessions on
-  set :session_secret, "secret" #encryption key that creates a session id
+    enable :sessions #turns sessions on
+    set :session_secret, "secret" #encryption key that creates a session id
   end #stored in browser cookie
 end
