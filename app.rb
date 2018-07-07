@@ -6,7 +6,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    params.to_s
+    @session = session 
   end
 
   configure do
